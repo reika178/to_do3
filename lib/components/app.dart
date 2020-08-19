@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/semantics.dart';
 import 'package:provider/provider.dart';
-import 'package:simple_todo_app/configs/const_text.dart';
-import 'package:simple_todo_app/repositories/todo_bloc.dart';
+import 'package:to_do3/configs/const_text.dart';
+import 'package:to_do3/repositories/todo_bloc.dart';
 
 import 'todo_list/todo_list_view.dart';
 

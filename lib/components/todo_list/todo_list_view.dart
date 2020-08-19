@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:simple_todo_app/components/todo_edit_view.dart';
-import 'package:simple_todo_app/configs/const_text.dart';
-import 'package:simple_todo_app/models/todo.dart';
-import 'package:simple_todo_app/repositories/todo_bloc.dart';
+import 'package:to_do3/components/todo_edit/todo_edit_view.dart';
+import 'package:to_do3/configs/const_text.dart';
+import 'package:to_do3/models/todo.dart';
+import 'package:to_do3/repositories/todo_bloc.dart';
 
 class TodoListView extends StatelessWidget {
 
@@ -12,7 +12,7 @@ class TodoListView extends StatelessWidget {
     final _bloc = Provider.of<TodoBloc>(context, listen: false);
 
     return Scaffold(
-      appBar: AppBar(title: Text(ConstText,todoListView)),
+      appBar: AppBar(title: Text(ConstText.todoListView)),
       body: StreamBuilder<List<Todo>>(
         stream: _bloc.todoStream,
         builder: (BuildContext context, AsyncSnapshot<List<Todo>> snapshot) {

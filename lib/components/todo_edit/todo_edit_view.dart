@@ -1,9 +1,9 @@
 import 'package:datetime_picker_formfield/datetime_picker_formfield.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
-import 'package:simple_todo_app/configs/const_text.dart';
-import 'package:simple_todo_app/models/todo.dart';
-import 'package:simple_todo_app/repositories/todo_bloc.dart';
+import 'package:to_do3/configs/const_text.dart';
+import 'package:to_do3/models/todo.dart';
+import 'package:to_do3/repositories/todo_bloc.dart';
 
 class TodoEditView extends StatelessWidget {
 
@@ -77,7 +77,7 @@ class TodoEditView extends StatelessWidget {
   );
 
   void _setDueDate(DateTime dt) {
-    _newTodo.duedate = dt;
+    _newTodo.dueDate = dt;
   }
 
   Widget _noteTextFormField() => TextFormField(
